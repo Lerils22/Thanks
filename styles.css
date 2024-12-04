@@ -1,0 +1,70 @@
+/* Set the background and layout for the body */
+body {
+    background: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Center and style the content in the container */
+.container {
+    text-align: center;
+    color: aliceblue;
+}
+
+/* Style the paragraph */
+p {
+    font-size: 5vw; /* Responsive font size */
+    margin-bottom: 20px;
+}
+
+/* Style the anchor link */
+a {
+    display: inline-block;
+}
+
+/* Style the button */
+button {
+    width: 200px;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    background: yellowgreen;
+    border: 2px solid lime;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, border 0.3s;
+}
+
+/* Hover effect for the button */
+button:hover {
+    color: white;
+    background: brown;
+    border: 3px solid white;
+}
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 768px) {
+    p {
+        font-size: 6vw; /* Larger text for smaller screens */
+    }
+
+    button {
+        width: 150px; /* Adjust button size for smaller screens */
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    p {
+        font-size: 8vw; /* Even larger text for very small screens */
+    }
+
+    button {
+        width: 130px; /* Adjust button size further */
+        height: 40px;
+    }
+}
